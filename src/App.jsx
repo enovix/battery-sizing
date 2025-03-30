@@ -53,7 +53,7 @@ export default function BatterySizing() {
     { name: "Backup Time", value: (parseFloat(backupTime) || 0) * 100 },
     { name: "Efficiency", value: (parseFloat(efficiency) || 0) * 100 },
     { name: "DoD", value: (parseFloat(dod) || 0) * 100 },
-    { name: "Battery Voltage", value: (parseFloat(batteryVoltage) || 0) * 10 },
+    { name: "Battery Voltage", value: (parseFloat(batteryVoltage) || 0) },
   ];
 
   return (
@@ -66,23 +66,23 @@ export default function BatterySizing() {
             <tbody>
               <tr>
                 <td><label>Load (W)</label></td>
-                <td><Input type="number" value={load} onChange={(e) => setLoad(e.target.value)} required /></td>
+                <td><Input className="data" type="number" value={load} onChange={(e) => setLoad(e.target.value)} required /></td>
               </tr>
               <tr>
                 <td><label>Backup Time (hours)</label></td>
-                <td><Input type="number" value={backupTime} onChange={(e) => setBackupTime(e.target.value)} required /></td>
+                <td><Input className="data" type="number" value={backupTime} onChange={(e) => setBackupTime(e.target.value)} required /></td>
               </tr>
               <tr>
                 <td><label>Efficiency (0-1)</label></td>
-                <td><Input type="number" value={efficiency} onChange={(e) => setEfficiency(e.target.value)} required /></td>
+                <td><Input className="data" type="number" value={efficiency} onChange={(e) => setEfficiency(e.target.value)} required /></td>
               </tr>
               <tr>
                 <td><label>Depth of Discharge (0-1)</label></td>
-                <td><Input type="number" value={dod} onChange={(e) => setDod(e.target.value)} required /></td>
+                <td><Input className="data" type="number" value={dod} onChange={(e) => setDod(e.target.value)} required /></td>
               </tr>
               <tr>
                 <td><label>System Voltage (V)</label></td>
-                <td><Input type="number" value={batteryVoltage} onChange={(e) => setBatteryVoltage(e.target.value)} required /></td>
+                <td><Input className="data" type="number" value={batteryVoltage} onChange={(e) => setBatteryVoltage(e.target.value)} required /></td>
               </tr>
             </tbody>
           </table>
@@ -101,7 +101,7 @@ export default function BatterySizing() {
       </Card>
 
       <div className="mt-6">
-        <h3 className="text-lg font-semibold mb-2">Input Parameters Visualization</h3>
+        <h3 className="text-lg font-semibold mb-1">Input Parameters Visualization</h3>
         <LineChart width={300} height={200} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />

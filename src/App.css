@@ -14,25 +14,26 @@ body {
 /* Card Styles */
 .card {
   background: white;
-  padding: 5px;
+  padding: 8px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  max-width: 440px;
-  width: 98%;
+  width: 103%;
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
+  margin-left: -14px;
 }
 
 /* Table for Inputs */
 .input-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 10px; /* Space between rows */
+  border-spacing: 5px 10px; /* Space between rows */
   /* border: solid green; */
 }
 
 .input-table td {
   padding: 6px 2px;
+  width: 80px;
 }
 
 .input-table label {
@@ -44,13 +45,15 @@ body {
 
 /* Input Field */
 input {
-  width: 60%;
-  padding: 10px;
+  width: 43%;
+  padding: 6px;
   border: 2px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   transition: border 0.3s ease-in-out;
   background: #f8f9fc;
+}
+  /* border: solid blue;
 }
 
 input:focus {
@@ -61,13 +64,13 @@ input:focus {
 
 /* Button Styles */
 button {
-  width: 35%;
-  padding: 12px;
+  width: 36%;
+  padding: 9px;
   border: none;
   border-radius: 8px;
   background: linear-gradient(to right, #4a90e2, #357abd);
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-top: 15px;
@@ -88,7 +91,7 @@ button:hover {
 /* Result Display */
 .result-text {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #333;
   padding: 10px;
