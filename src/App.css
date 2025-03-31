@@ -65,7 +65,7 @@ input:focus {
 /* Button Styles */
 button {
   width: 36%;
-  padding: 9px;
+  padding: 3px;
   border: none;
   border-radius: 8px;
   background: linear-gradient(to right, #4a90e2, #357abd);
@@ -80,7 +80,7 @@ button {
 .button-group{
   display: flex;
   justify-content: center;
-  column-gap: 50px;
+  column-gap: 12px;
 
 }
 
@@ -97,7 +97,7 @@ button:hover {
   padding: 10px;
   background: #32ed79;
   border-radius: 8px;
-  width: 90%;
+  width: 93.5%;
 }
 
 /* Fade In Animation */

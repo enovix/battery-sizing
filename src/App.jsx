@@ -4,6 +4,7 @@ import { Input } from "./components/ui/input";
 import { Button } from "./components/ui/button";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
+import DownloadReport from "./components/ui/downloadReport";
 import "./App.css";
 
 export default function BatterySizing() {
@@ -38,7 +39,6 @@ export default function BatterySizing() {
     const requiredAh = usableCapacity / parseFloat(batteryVoltage);
     setCapacity(requiredAh.toFixed(2));
   };
-
   const resetFields = () => {
     setLoad("");
     setBackupTime("");
@@ -47,7 +47,6 @@ export default function BatterySizing() {
     setBatteryVoltage("");
     setCapacity(null);
   };
-
   const data = [
     { name: "Load", value: parseFloat(load) || 0 },
     { name: "Backup Time", value: (parseFloat(backupTime) || 0) * 100 },
@@ -88,8 +87,11 @@ export default function BatterySizing() {
           </table>
 
           <div className="button-group">
-            <Button onClick={calculateBatterySize}>⚡ Calculate</Button>
-            <Button onClick={resetFields} className="reset-button">🔄 Reset</Button>
+            <Button onClick={calculateBatterySize}>⚡Calculate</Button>
+
+            {/* these buttons will show only if the capacity is calculated */}
+            {capacity && <Button onClick={resetFields} className="reset-button">🔄Reset</Button>}
+            {capacity && <DownloadReport load={load} backupTime={backupTime} efficiency={efficiency} dod={dod} batteryVoltage={batteryVoltage} capacity={capacity} />}
           </div>
 
           {capacity && (

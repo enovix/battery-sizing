@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -19,6 +18,7 @@
     "card": "^2.5.4",
     "class-variance-authority": "^0.7.1",
     "input": "^1.0.1",
+    "jspdf": "^3.0.1",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
