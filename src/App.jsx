@@ -17,6 +17,7 @@ export default function App() {
         <NavBar />
         <div className="mainContent">
           <Routes>
+            <Route path="/" element={<Gallery/>} />
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/battery-sizing" element={<BatterySizing />} />
             <Route path='/solar-sizing' element={<SolarSizing/>} />
