@@ -1,0 +1,16 @@
+/* src/styles/Gallery.css */
+
+.galleryCard {
+  background-color: #f4f4f4; /* light gray card background */
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 95%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.galleryCard img {
+  border-radius: 12px;
+  height: 100%; /* You can adjust this height */
+  object-fit:fill; /* Crop to fill while maintaining aspect */
+}
