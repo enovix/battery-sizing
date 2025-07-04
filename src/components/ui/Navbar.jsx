@@ -9,9 +9,9 @@ const NavBar = () => {
     <div className="navigationBar">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          {/* <Link class="navbar-brand" to="/gallery">
+          <Link class="navbar-brand" to="#">
             Efficient Tools & Solutions
-          </Link> */}
+          </Link>
           <button
             class="navbar-toggler"
             type="button"

@@ -63,10 +63,9 @@ export default function SolarSizing() {
 
   return (
     <div className="p-4 cardContainer text-left">
-
-        <marquee className="scrolling" behavior="scroll" direction=""> <h5>⚠️ Make sure to design the Battery Requirement first</h5></marquee>
  
       <Card>
+        <marquee className="scrolling" behavior="scroll" direction=""> <h5>⚠️ Make sure to design the Battery Requirement first</h5></marquee>
         <CardContent className="p-4 text-left">
           <h4 className="text-2xl font-bold text-center mb-4">🔆 Solar Plant Sizing</h4>
 
