@@ -24,7 +24,6 @@
   padding: 2px 10px;
   background: #f0f2f5;
   border-radius: 15px;
-  border: solid #357abd;
   height: auto; /* Let content define height */
   max-height: 82%; /* Optional: scroll if it gets too tall */
   overflow-y: auto; /* Enable scroll if needed */

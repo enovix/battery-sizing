@@ -12,10 +12,11 @@ import Notes from './components/ui/Notes';
 export default function App() {
   return (
     <div className="appLayout">
-      <BrowserRouter  basename="/ets">
+      <BrowserRouter basename='/ets'>
         <NavBar />
         <div className="mainContent">
           <Routes>
+            <Route path="/" element={<BatterySizing />} />
             <Route path="/battery-sizing" element={<BatterySizing />} />
             <Route path='/solar-sizing' element={<SolarSizing/>} />
             <Route path="/notes" element={<Notes />} />
@@ -25,6 +26,7 @@ export default function App() {
         <div className="appFooter">
           <Footer />
         </div>
+
       </BrowserRouter>
     </div>
   );
