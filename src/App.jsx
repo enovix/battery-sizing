@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/ui/NavBar';
 import Footer from './components/ui/Footer';
 import Notes from './components/ui/Notes';
-import Gallery from './components/ui/Gallery';
 
 export default function App() {
   return (
@@ -17,8 +16,6 @@ export default function App() {
         <NavBar />
         <div className="mainContent">
           <Routes>
-            <Route path="/" element={<Gallery/>} />
-            <Route path="/gallery" element={<Gallery/>} />
             <Route path="/battery-sizing" element={<BatterySizing />} />
             <Route path='/solar-sizing' element={<SolarSizing/>} />
             <Route path="/notes" element={<Notes />} />

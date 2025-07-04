@@ -9,9 +9,9 @@ const NavBar = () => {
     <div className="navigationBar">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <Link class="navbar-brand" to="/gallery">
+          {/* <Link class="navbar-brand" to="/gallery">
             Efficient Tools & Solutions
-          </Link>
+          </Link> */}
           <button
             class="navbar-toggler"
             type="button"
@@ -26,9 +26,9 @@ const NavBar = () => {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link" aria-current="page" to="/gallery">
+                {/* <Link class="nav-link" aria-current="page" to="/gallery">
                   Home
-                </Link>
+                </Link> */}
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/battery-sizing">
