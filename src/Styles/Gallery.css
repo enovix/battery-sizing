@@ -1,16 +1,74 @@
-/* src/styles/Gallery.css */
-
-.galleryCard {
-  background-color: #f4f4f4; /* light gray card background */
-  padding: 20px;
-  border-radius: 16px;
-  max-width: 95%;
-  margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+.carousel-wrapper {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.galleryCard img {
-  border-radius: 12px;
-  height: 100%; /* You can adjust this height */
-  object-fit:fill; /* Crop to fill while maintaining aspect */
+.solar-swiper {
+  width: 100%;
+  height: 84%;
 }
+
+.slide-image {
+  width: 100%;
+  height: 92%;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+  bottom: 10px !important;
+}
+.swiper-pagination-bullet {
+  background: #888;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: #fc2f2f;
+  opacity: 1;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+}
+
+/* Customize Swiper navigation arrows like better-react-carousel */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slight hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: remove default outline */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .solar-swiper {
+    width: 80%;
+    height: 84%;
+  }
+}
+

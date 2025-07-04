@@ -9,7 +9,7 @@ const NavBar = () => {
     <div className="navigationBar">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <Link class="navbar-brand" to="#">
+          <Link class="navbar-brand" to="/">
             Efficient Tools & Solutions
           </Link>
           <button
