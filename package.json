@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://enovix.github.io/battery-sizing",
+  "homepage": "https://enovix.github.io/ets",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predploy" : "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "class-variance-authority": "^0.7.1",
     "input": "^1.0.1",
     "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",

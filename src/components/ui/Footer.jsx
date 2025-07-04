@@ -10,10 +10,10 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} ETS Global. All rights reserved.</p>
-        <p>
+        {/* <p>
           Made with <span role="img" aria-label="love">❤️</span> by{" "}
           <a href="" target="_blank" rel="noopener noreferrer">Technologist  James</a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );

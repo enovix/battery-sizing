@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "./card";
 import { Input } from "./input";
 import { Button } from "./button";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+// import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
 import DownloadReport from "./downloadReport";
 
@@ -63,16 +63,16 @@ export default function BatterySizing() {
 
   };
 
-  const data = [
-    { name: "Load", value: parseFloat(load) || 0 },
-    { name: "Backup Time", value: (parseFloat(backupTime) || 0) * 100 },
-    { name: "Efficiency", value: (parseFloat(efficiency) || 0) * 100 },
-    { name: "DoD", value: (parseFloat(dod) || 0) * 100 },
-    { name: "Battery Voltage", value: (parseFloat(batteryVoltage) || 0) },
-  ];
+  // const data = [
+  //   { name: "Load", value: parseFloat(load) || 0 },
+  //   { name: "Backup Time", value: (parseFloat(backupTime) || 0) * 100 },
+  //   { name: "Efficiency", value: (parseFloat(efficiency) || 0) * 100 },
+  //   { name: "DoD", value: (parseFloat(dod) || 0) * 100 },
+  //   { name: "Battery Voltage", value: (parseFloat(batteryVoltage) || 0) },
+  // ];
 
   return (
-    <div className="p-4 cardContainer">
+    <div className="p-4 cardContainer cardContainerBatterySizing">
       <Card>
         <CardContent className="p-4">
           <h4 className="text-2xl font-bold text-center mb-4">🔋 Battery Capacity Sizing</h4>
@@ -126,7 +126,7 @@ export default function BatterySizing() {
         </CardContent>
       </Card>
 
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <h4 className="text-lg font-semibold mb-1">Input Parameters Visualization</h4>
         <LineChart width={300} height={200} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -136,7 +136,7 @@ export default function BatterySizing() {
           <Legend />
           <Line type="monotone" dataKey="value" stroke="#8884d8" />
         </LineChart>
-      </div>
+      </div> */}
     </div>
   );
 }

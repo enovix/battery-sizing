@@ -111,7 +111,7 @@ export default function SolarSizing() {
 
           {solarWattage && (
             <p className="result-text">
-              Required Solar Panel Wattage: <strong>{solarWattage} kW</strong>
+              Required Solar plant: <strong>{solarWattage} kW</strong>
             </p>
           )}
         </CardContent>

@@ -1,12 +1,37 @@
-.cardContainer{
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .cardContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Space between cards */
-  padding: 5px 10px;
-  background: #f0f2f5; /* Light background for contrast */
+  gap: 10px; Space between cards
+  padding: 2px 10px;
+  background: #f0f2f5; Light background for contrast
   border-radius: 15px;
+  border: solid #357abd;
+  height: 80%;
+  overflow-y: scroll;
+} */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px 10px;
+  background: #f0f2f5;
+  border-radius: 15px;
+  border: solid #357abd;
+  height: auto; /* Let content define height */
+  max-height: 82%; /* Optional: scroll if it gets too tall */
+  overflow-y: auto; /* Enable scroll if needed */
+  width: 100%; /* Ensures full width on mobile */
+  box-sizing: border-box;
 }
+
 
 /* Card Styles */
 .card {
@@ -23,10 +48,6 @@
   animation: fadeIn 0.5s ease-in-out;
   margin-bottom: 2px;
   /* margin-left: -6px; */
-}
-
-.container{
-  overflow-y: scroll;
 }
 
 /* Table for Inputs */
@@ -125,6 +146,7 @@ button:hover {
 @media (max-width: 480px) {
   .cardContainer {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px;
     gap: 10px;
@@ -149,10 +171,10 @@ button:hover {
   flex: 1;
   padding: 20px;
   background-color: #f9f9f9;
-  overflow-y: scroll;
-  padding: 20px;
-  padding-bottom: 150px; /* ⬅️ extra space to prevent footer overlap */
+  padding-bottom: auto; /* ⬅️ extra space to prevent footer overlap */
   background-color: #f9f9f9;
+  height: 40%;
+  border: 1px solid #4bae0e; /* Optional: Add a border for better visibility */
 
 }
 
@@ -164,12 +186,10 @@ button:hover {
 }
 
 /* Optional: Footer look */
-.footer {
-  text-align: center;
-  padding: 15px 10px;
-  background: #1e2a38;
-  color: white;
-}
+/* .appFooter {
+position: absolute;
+
+} */
 
 .scrolling{
   color: red;

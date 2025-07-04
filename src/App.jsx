@@ -25,7 +25,9 @@ export default function App() {
             {/* Add more routes here as needed */}
           </Routes>
         </div>
-        <Footer />
+        <div className="appFooter">
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );
