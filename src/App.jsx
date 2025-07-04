@@ -12,7 +12,7 @@ import Notes from './components/ui/Notes';
 export default function App() {
   return (
     <div className="appLayout">
-      <BrowserRouter>
+      <BrowserRouter  basename="/ets">
         <NavBar />
         <div className="mainContent">
           <Routes>
